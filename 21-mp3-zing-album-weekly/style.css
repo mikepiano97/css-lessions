@@ -1,0 +1,54 @@
+body {
+	margin: 0;
+}
+
+.item {
+	display: flex;
+	font-family: Arial, san-serif;
+	padding: 10px 0;
+	border-bottom: 1px solid #e6e6e6;
+	width: 350px;
+}
+
+.item .album-img {
+	height: 128px;
+	width: 128px;
+	background-image: url('https://placeimg.com/128/128/any');
+	/*display: flex;
+	align-items: stretch;*/
+	background-size: cover;
+	position: center;
+}
+
+.item .overlay {
+	/*flex-grow: 1;*/
+	height: 100%;
+	background: rgb(0,0,0);
+	background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+	background: -o-linear-gradient(bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+	background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+	display: flex;
+	align-items: flex-end;
+	color: white;
+	font-size: 20px;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+.album-info {
+	flex-grow: 1;
+	padding-left: 10px;
+}
+
+.album-info .title {
+	text-transform: capitalize;
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 2px;
+}
+
+.album-info .singer, .album-info .view {
+	font-size: 14px;
+	color: #ababab;
+	padding-top:5px; 
+}

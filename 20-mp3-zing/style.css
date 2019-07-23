@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+}
+
+.weekly {
+	width: 300px;
+	height: 50px;
+}
+
+.weekly-item {
+	display: flex;
+	font-family: Arial, san-serif;
+	align-items: center;
+	padding: 10px 0;
+	border-bottom: 1px solid #CCC;
+}
+
+.weekly-item .number {
+	font-size: 24px;
+	/*font-weight: bold;*/
+	padding: 0 10px;
+}
+
+.weekly-item .info {
+	flex-grow: 1;
+}
+
+.weekly-item .info .song-title {
+	text-transform: capitalize;
+	font-size: 14px;
+	padding-bottom: 6px;
+}
+
+.weekly-item .info .singer {
+	color: #999;
+	font-size: 13px;
+}
+
+.weekly-item .view-count {
+	color: #999;
+	font-size: 16px;
+	padding: 0 10px;	
+}

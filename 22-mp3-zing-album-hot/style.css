@@ -1,0 +1,59 @@
+body {
+	margin: 0;
+}
+.album-hot {
+	display: flex;
+	justify-content: space-around;
+}
+.item {
+	display: flex;
+	font-family: Arial, san-serif;
+	padding: 0 0;
+	flex-direction: column;
+	width: 128px;
+	height: 200px;
+	margin-right: 10px;
+}
+
+.item .album-img {
+	height: 128px;
+	width: 128px;
+	background-image: url('https://placeimg.com/128/128/any');
+	/*display: flex;
+	align-items: stretch;*/
+	background-size: cover;
+	position: center;
+}
+
+.item .overlay {
+	/*flex-grow: 1;*/
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 50px;
+	opacity: 0;
+}
+
+.album-img:hover .overlay {
+	opacity: 1;
+}
+
+.album-info {
+	margin-top: 10px;
+}
+
+.album-info .title {
+	font-size: 14px;
+	text-transform: capitalize;
+	font-weight: lighter;
+	padding-bottom: 5px;
+	line-height: 20px;
+}
+
+.album-info .singer {
+	font-size: 13px;
+	color: gray;
+}
