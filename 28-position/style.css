@@ -1,0 +1,34 @@
+body {
+	margin: 0;
+}
+
+.container	{
+	/*display: flex;*/
+	color: white;
+	font-size: 20px;
+}
+
+.box {
+	width: 128px;
+	height: 128px;
+}
+
+.red {
+	background-color: red;
+}
+
+.blue {
+	background-color: blue;
+	/*position: relative;
+	top: -10px;*/
+}
+
+.green {
+	background-color: green;
+}
+
+.fixed {
+	position: fixed;
+	right: 10px;
+	top: 10px;
+}
