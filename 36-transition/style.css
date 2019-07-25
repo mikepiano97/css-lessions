@@ -1,0 +1,46 @@
+.album {
+	width: 200px;
+	height: 200px;
+	background-image: url('http://lorempixel.com/400/300/');
+	background-size: cover;
+
+}
+
+.album .overlay {
+	background-color: rgba(0,0,0,0.5);
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.album .overlay img {
+	transform: scale(0.8);
+	transition: 0.2s;
+}
+
+.album:hover .overlay {
+	opacity: 1;
+}
+
+.album:hover .overlay img {
+	transform: scale(1);
+}
+
+
+/*.button {
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	padding: 10px 20px;
+	background-color: #EEE;
+	display: inline-block;
+	transition: 0.5s;
+}
+
+.button:hover {
+	background-color: blue;
+	color: white;
+}*/

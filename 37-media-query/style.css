@@ -1,0 +1,23 @@
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.item {
+	background-color: #EEE;  
+	padding: 50px;
+	border: 1px solid #DDD;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (min-width: 600px) {
+	.container {
+		flex-direction: row;
+	}
+
+	.item {
+		flex-grow: 1;
+	}
+}
